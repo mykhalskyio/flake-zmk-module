@@ -203,11 +203,32 @@ svg.keymap {
   font-size: 12px;
   font-weight: bold;
   text-rendering: optimizeLegibility;
+  background-color: #1a1b2e;
 }
 
-rect.held, rect.combo.held {
-    fill: #ffc;
-}
+/* dark theme colors */
+svg.keymap .key rect { fill: #2a2e3a; stroke: #3a3f4b; }
+svg.keymap text { fill: #d1d5db; }
+svg.keymap text.tap { fill: #e8ecf0; }
+svg.keymap text.hold { fill: #8b90a0; }
+svg.keymap text.shifted { fill: #e06070; }
+svg.keymap path { fill: #d1d5db; }
+
+/* combo keys */
+svg.keymap .combo rect { fill: #2a3a5a; stroke: #3a4a6a; }
+svg.keymap .combo text { fill: #8ab4f8; }
+svg.keymap .combo path { fill: #8ab4f8; }
+
+/* held/layer toggle keys */
+rect.held, rect.combo.held { fill: #3a2a2a; stroke: #5a3a3a; }
+
+/* layer header text */
+svg.keymap text.label { fill: #c0c8d4; }
+
+/* transparent keys */
+svg.keymap .trans rect { fill: #242838; stroke: #2e3240; }
+svg.keymap .trans text { fill: #555a68; }
+svg.keymap .trans path { fill: #555a68; }
 
 .sym_sub_text.tap {
   translate: -5px 2px;
