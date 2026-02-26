@@ -1,0 +1,38 @@
+draw_config:
+  n_columns: 1
+  glyph_urls:
+    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
+  use_local_cache: true
+
+parse_config:
+  mark_alternate_layer_activators: true
+  trans_legend:
+    tap: ""
+    type: trans
+
+  raw_binding_map:
+    "&soft_off":
+      tap: $$mdi:power-standby$$
+    "&studio_unlock":
+      tap: $$mdi:lock-open-variant$$
+    "&bt0":
+      tap: $$mdi:bluetooth-connect$$
+      hold: "1"
+    "&bt1":
+      tap: $$mdi:bluetooth-connect$$
+      hold: "2"
+    "&bt2":
+      tap: $$mdi:bluetooth-connect$$
+      hold: "3"
+    "&bt3":
+      tap: $$mdi:bluetooth-connect$$
+      hold: "4"
+    "&bt4":
+      tap: $$mdi:bluetooth-connect$$
+      hold: "5"
+
+  zmk_combos:
+    bt_sel_3:
+      align: top
+    bt_sel_4:
+      align: top
