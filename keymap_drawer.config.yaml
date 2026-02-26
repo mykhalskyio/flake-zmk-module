@@ -1,6 +1,6 @@
 draw_config:
   n_columns: 1
-  draw_key_sides: true
+  draw_key_sides: false
   key_w: 60.0
   key_h: 56.0
   split_gap: 30.0
@@ -31,7 +31,7 @@ draw_config:
     svg.keymap text.tap { fill: #e8ecf0; }
     svg.keymap text.hold { fill: #8b90a0; }
     svg.keymap text.shifted { fill: #e06070; }
-    svg.keymap path { fill: #d1d5db; }
+    svg.keymap path { fill: #e8ecf0; }
 
     /* combo keys */
     svg.keymap .combo rect { fill: #2a3a5a; stroke: #3a4a6a; }
