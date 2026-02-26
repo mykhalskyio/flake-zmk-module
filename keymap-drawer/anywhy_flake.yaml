@@ -1,19 +1,19 @@
 layout: {zmk_keyboard: anywhy_flake}
 layers:
   base:
-  - ESC
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - BSPC
-  - TAB
+  - $$mdi:keyboard-esc$$
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - {t: E, type: held}
@@ -24,8 +24,8 @@ layers:
   - {t: I, type: held alternate}
   - O
   - P
-  - \
-  - CAPS
+  - {t: \, s: '|'}
+  - $$mdi:apple-keyboard-caps$$
   - A
   - {t: S, type: held}
   - D
@@ -35,9 +35,9 @@ layers:
   - {t: J, type: held alternate}
   - K
   - {t: L, type: held alternate}
-  - ;
-  - ''''
-  - LSHFT
+  - {t: ;, s: ':'}
+  - .
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -45,22 +45,22 @@ layers:
   - B
   - N
   - M
-  - ','
-  - .
-  - /
-  - ENTER
-  - LCTRL
-  - LGUI
-  - LALT
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
   - num
-  - SPACE
-  - SPACE
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-space$$
   - fn
-  - RALT
-  - RSHFT
-  - DEL
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:backspace-reverse-outline$$
   num:
-  - '`'
+  - {t: '`', s: '~'}
   - F1
   - F2
   - F3
@@ -71,112 +71,112 @@ layers:
   - F8
   - F9
   - F10
-  - {type: trans}
-  - {type: trans}
-  - Alt+1
-  - Alt+2
-  - Alt+3
-  - Alt+4
-  - Alt+5
-  - {type: trans}
-  - {type: trans}
-  - UP
-  - {type: trans}
-  - '-'
-  - '='
-  - {type: trans}
-  - Alt+6
-  - Alt+7
-  - Alt+8
-  - Alt+9
-  - Alt+0
-  - {type: trans}
-  - LEFT
-  - DOWN
-  - RIGHT
-  - '['
-  - ']'
-  - {type: trans}
-  - {type: trans}
-  - VOLUME DOWN
-  - VOLUME UP
-  - MUTE
-  - PLAY PAUSE
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Alt+1, s: Alt+!}
+  - {t: Alt+2, s: Alt+@}
+  - {t: Alt+3, s: Alt+#}
+  - {t: Alt+4, s: Alt+$}
+  - {t: Alt+5, s: Alt+%}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Alt+6, s: Alt+^}
+  - {t: Alt+7, s: Alt+&}
+  - {t: Alt+8, s: Alt+*}
+  - {t: Alt+9, s: Alt+(}
+  - {t: Alt+0, s: Alt+)}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:volume-off$$
+  - $$mdi:play-pause$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F12
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   fn:
   - '~'
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:power-standby$$
   - {t: '$$mdi:bluetooth-connect$$', h: '3'}
-  - {type: trans}
-  - UP
-  - {type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - _
   - +
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:bluetooth-connect$$', h: '2'}
-  - LEFT
-  - DOWN
-  - RIGHT
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - '{'
   - '}'
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:lock-open-variant$$
   - {t: '$$mdi:bluetooth-connect$$', h: '1'}
-  - VOLUME DOWN
-  - VOLUME UP
-  - MUTE
-  - PLAY PAUSE
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:volume-off$$
+  - $$mdi:play-pause$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [42, 30]
   k: {t: '$$mdi:bluetooth-connect$$', h: '4'}
@@ -187,9 +187,9 @@ combos:
   l: [fn]
   a: top
 - p: [26, 15, 28]
-  k: {t: base, h: sticky}
+  k: {t: base, h: '$$mdi:gesture-tap-hold$$'}
   l: [fn]
 - p: [31, 20, 33]
-  k: {t: base, h: sticky}
+  k: {t: base, h: '$$mdi:gesture-tap-hold$$'}
 - p: [13, 25]
-  k: '`'
+  k: {t: '`', s: '~'}
