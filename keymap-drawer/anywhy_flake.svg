@@ -54,9 +54,6 @@
 <svg id="mdi:lock-open-variant">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-lock-open-variant" viewBox="0 0 24 24"><path d="M18 1C15.24 1 13 3.24 13 6V8H4C2.9 8 2 8.89 2 10V20C2 21.11 2.9 22 4 22H16C17.11 22 18 21.11 18 20V10C18 8.9 17.11 8 16 8H15V6C15 4.34 16.34 3 18 3C19.66 3 21 4.34 21 6V8H23V6C23 3.24 20.76 1 18 1M10 13C11.1 13 12 13.89 12 15C12 16.11 11.11 17 10 17C8.9 17 8 16.11 8 15C8 13.9 8.9 13 10 13Z" /></svg>
 </svg>
-<svg id="mdi:play-pause">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-play-pause" viewBox="0 0 24 24"><path d="M3,5V19L11,12M13,19H16V5H13M18,5V19H21V5" /></svg>
-</svg>
 <svg id="mdi:power-standby">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-power-standby" viewBox="0 0 24 24"><path d="M13,3H11V13H13V3M17.83,5.17L16.41,6.59C18.05,7.91 19,9.9 19,12A7,7 0 0,1 12,19C8.14,19 5,15.88 5,12C5,9.91 5.95,7.91 7.58,6.58L6.17,5.17C2.38,8.39 1.92,14.07 5.14,17.86C8.36,21.64 14.04,22.1 17.83,18.88C19.85,17.17 21,14.65 21,12C21,9.37 19.84,6.87 17.83,5.17Z" /></svg>
 </svg>
@@ -203,7 +200,7 @@ svg.keymap {
   font-size: 12px;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  background-color: #1a1b2e;
+  background-color: transparent;
 }
 
 /* dark theme colors */
@@ -222,8 +219,8 @@ svg.keymap .combo path { fill: #8ab4f8; }
 /* held/layer toggle keys */
 rect.held, rect.combo.held { fill: #3a2a2a; stroke: #5a3a3a; }
 
-/* layer header text */
-svg.keymap text.label { fill: #c0c8d4; }
+/* hide layer headers */
+svg.keymap text.label { display: none; }
 
 /* transparent keys */
 svg.keymap .trans rect { fill: #242838; stroke: #2e3240; }
@@ -291,7 +288,7 @@ svg.keymap .trans path { fill: #555a68; }
 }
 </style>
 <g transform="translate(40, 0)" class="layer-base">
-<text x="0" y="28" class="label" id="base">base:</text>
+<text x="0" y="28" class="label" id="base">base</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 70)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -616,7 +613,7 @@ svg.keymap .trans path { fill: #555a68; }
 </g>
 </g>
 <g transform="translate(40, 394)" class="layer-num">
-<text x="0" y="28" class="label" id="num">num:</text>
+<text x="0" y="28" class="label" id="num">num</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 70)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -841,7 +838,9 @@ svg.keymap .trans path { fill: #555a68; }
 <g transform="translate(308, 210)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:play-pause" xlink:href="#mdi:play-pause" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:play-pause"/>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.6em">PLAY</tspan><tspan x="0" dy="1.2em">PAUSE</tspan>
+</text>
 </g>
 <g transform="translate(588, 210)" class="key trans keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -938,7 +937,7 @@ svg.keymap .trans path { fill: #555a68; }
 </g>
 </g>
 <g transform="translate(40, 788)" class="layer-fn">
-<text x="0" y="28" class="label" id="fn">fn:</text>
+<text x="0" y="28" class="label" id="fn">fn</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 70)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1176,7 +1175,9 @@ svg.keymap .trans path { fill: #555a68; }
 <g transform="translate(812, 238)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:play-pause" xlink:href="#mdi:play-pause" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:play-pause"/>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.6em">PLAY</tspan><tspan x="0" dy="1.2em">PAUSE</tspan>
+</text>
 </g>
 <g transform="translate(868, 238)" class="key trans keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
