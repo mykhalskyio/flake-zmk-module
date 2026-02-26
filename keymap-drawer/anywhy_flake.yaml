@@ -1,0 +1,195 @@
+layout: {zmk_keyboard: anywhy_flake}
+layers:
+  base:
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - BSPC
+  - TAB
+  - Q
+  - W
+  - {t: E, type: held}
+  - R
+  - T
+  - Y
+  - U
+  - {t: I, type: held alternate}
+  - O
+  - P
+  - \
+  - CAPS
+  - A
+  - {t: S, type: held}
+  - D
+  - {t: F, type: held}
+  - G
+  - H
+  - {t: J, type: held alternate}
+  - K
+  - {t: L, type: held alternate}
+  - ;
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ENTER
+  - LCTRL
+  - LGUI
+  - LALT
+  - num
+  - SPACE
+  - SPACE
+  - fn
+  - RALT
+  - RSHFT
+  - DEL
+  num:
+  - '`'
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - {type: trans}
+  - {type: trans}
+  - Alt+1
+  - Alt+2
+  - Alt+3
+  - Alt+4
+  - Alt+5
+  - {type: trans}
+  - {type: trans}
+  - UP
+  - {type: trans}
+  - '-'
+  - '='
+  - {type: trans}
+  - Alt+6
+  - Alt+7
+  - Alt+8
+  - Alt+9
+  - Alt+0
+  - {type: trans}
+  - LEFT
+  - DOWN
+  - RIGHT
+  - '['
+  - ']'
+  - {type: trans}
+  - {type: trans}
+  - VOLUME DOWN
+  - VOLUME UP
+  - MUTE
+  - PLAY PAUSE
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - F11
+  - F12
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  fn:
+  - '~'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - $$mdi:power-standby$$
+  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
+  - {type: trans}
+  - UP
+  - {type: trans}
+  - _
+  - +
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
+  - LEFT
+  - DOWN
+  - RIGHT
+  - '{'
+  - '}'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - $$mdi:lock-open-variant$$
+  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
+  - VOLUME DOWN
+  - VOLUME UP
+  - MUTE
+  - PLAY PAUSE
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+combos:
+- p: [42, 30]
+  k: {t: '$$mdi:bluetooth-connect$$', h: '4'}
+  l: [fn]
+  a: top
+- p: [30, 18]
+  k: {t: '$$mdi:bluetooth-connect$$', h: '5'}
+  l: [fn]
+  a: top
+- p: [26, 15, 28]
+  k: {t: base, h: sticky}
+  l: [fn]
+- p: [31, 20, 33]
+  k: {t: base, h: sticky}
+- p: [13, 25]
+  k: '`'
