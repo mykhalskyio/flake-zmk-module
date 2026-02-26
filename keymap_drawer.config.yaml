@@ -14,7 +14,7 @@ draw_config:
   outer_pad_h: 56.0
   line_spacing: 1.2
   arc_radius: 6.0
-  append_colon_to_layer_header: true
+  append_colon_to_layer_header: false
   small_pad: 2.0
   svg_extra_style: |
     svg.keymap {
@@ -22,7 +22,7 @@ draw_config:
       font-size: 12px;
       font-weight: bold;
       text-rendering: optimizeLegibility;
-      background-color: #1a1b2e;
+      background-color: transparent;
     }
 
     /* dark theme colors */
@@ -41,8 +41,8 @@ draw_config:
     /* held/layer toggle keys */
     rect.held, rect.combo.held { fill: #3a2a2a; stroke: #5a3a3a; }
 
-    /* layer header text */
-    svg.keymap text.label { fill: #c0c8d4; }
+    /* hide layer headers */
+    svg.keymap text.label { display: none; }
 
     /* transparent keys */
     svg.keymap .trans rect { fill: #242838; stroke: #2e3240; }
